@@ -7,22 +7,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.wt.domain.model.WorkingTime;
-import com.example.wt.domain.service.UpdateAttendanceService;
+import com.example.wt.domain.service.UpdateLeavingService;
 
 @RestController
-@RequestMapping("/attendance")
-public class AttendanceController {
+@RequestMapping("leaving")
+public class LeavingController {
 
 	@Autowired
-	UpdateAttendanceService service;
+	UpdateLeavingService service;
 	
-	@PostMapping("/regist")
+	@PostMapping("regist")
 	public void regist(@RequestBody WorkingTime model) {
 		
-		// call service
-		service.UpdateAttendance(model);	
+		//call service
+		service.UpdateLeaving(model);
 		return;
 	}
-	
-	
 }
