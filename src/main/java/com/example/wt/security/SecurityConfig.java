@@ -1,4 +1,4 @@
-package com.example.wt.securingweb;
+package com.example.wt.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
